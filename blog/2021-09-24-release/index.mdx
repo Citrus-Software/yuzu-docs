@@ -1,0 +1,46 @@
+---
+slug: release-2021-09
+title: 17/09/2021 release
+authors: [lucas]
+tags: [overmind, release]
+---
+
+export const Section = ({children, color}) => (
+  <h2
+    style={{
+      color: color,
+    }}
+    >
+    {children}
+  </h2>
+);
+
+<Section color="rgb(230,76,76)">Correctifs :</Section>
+
+- **Fiche d'asset** : correction du problème de changement de type sur l'édition d'attributs (ex: `length`).
+- **Filtres** :
+    - correction de la compatibilité des filtres complexes avec les opérateurs `is empty` et `is not empty`.
+    - correction du bug d'affichage des filtres sous forme d'`uuid` au lieu des noms des colonnes.
+- **Tableau my-tasks** : correction du problème de déclaration des heures qui affiche une erreur quand le grouping est actif.
+
+
+<Section color="rgb(76,153,230)">Mises à jour :</Section>
+
+- **Global** : amélioration globale de la vitesse, notamment sur les modules contenant l'asset list.
+- **Modal popup** : Affichage du nom de l'asset et du nom de la colonne en haut à gauche de toutes les popups de tableau.
+- **Follow-Up** :
+    - Remaniement des titres des onglets vers `<trig prod> - <nom asset> - <nom follow-up>`.
+    - Ajout de la possibilité de partager des liens direct vers des assets de type model ou shot.
+- **Asset list** : conservation de la sélection quand on change de module.
+
+
+<Section color="rgb(76,230,153)">Nouveautés :</Section>
+
+- **Follow-Up** : ajout de la possibilité de filtrer sur la présence ou non de dynamicApproval.
+- **Autocomplete** : il est maintenant possible de rechercher un asset par son path, par exemple pour trouver le shot 001 de l'épisode 101 il est maintenant possible de faire la recherche 101 001.
+- **Human ressources** (phase de béta fermée) : ajout d'un tout nouveau module de gestion du personnel avec :
+    - gestion des fiches de renseignements,
+    - gestion des contrats,
+    - gestion des plannings d'équipe et de studio.
+
+
