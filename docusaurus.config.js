@@ -1,5 +1,4 @@
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+import { themes as prismThemes } from "prism-react-renderer";
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -23,14 +22,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           docs: {
             sidebarPath: require.resolve("./sidebars.js"),
             sidebarCollapsed: false,
-            // Please change this to your repo.
-            // editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+            routeBasePath: "/",
           },
           blog: {
             showReadingTime: true,
-            // Please change this to your repo.
-            // editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/blog/',
-            routeBasePath: "/",
+            routeBasePath: "/release-notes/",
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),
@@ -61,7 +57,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               position: "left",
               label: "Developer Guide",
             },
-            // { to: "/", label: "Release notes", position: "left" },
+            // { to: "/release-notes", label: "Release notes", position: "left" },
           ],
         },
         footer: {
@@ -69,8 +65,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
           copyright: `Copyright © ${new Date().getFullYear()} TeamTO.`,
         },
         prism: {
-          theme: lightCodeTheme,
-          darkTheme: darkCodeTheme,
+          theme: prismThemes.github,
         },
       }),
   }

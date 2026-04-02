@@ -1,7 +1,8 @@
 ---
 sidebar_label: Welcome!
 sidebar_position: 1
-sidebar_colapsed: False
+sidebar_collapsed: false
+slug: /
 ---
 
 # Yuzu Documentation
