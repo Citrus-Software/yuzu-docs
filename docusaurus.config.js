@@ -5,15 +5,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (
   module.exports = {
-    title: "Overmind documentation",
+    title: "Yuzu documentation",
     tagline: "",
-    url: "https://docs.ovm.io",
-    baseUrl: "/",
+    url: "https://citrus-software.github.io",
+    baseUrl: "/yuzu-docs/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
-    organizationName: "TeamTO", // Usually your GitHub org/user name.
-    projectName: "Overmind", // Usually your repo name.
+    organizationName: "citrus-software", // Usually your GitHub org/user name.
+    projectName: "yuzu-docs", // Usually your repo name.
 
     presets: [
       [
@@ -43,7 +43,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         navbar: {
-          title: "Overmind",
+          title: "Yuzu",
           logo: {
             alt: "My Site Logo",
             src: "img/logo.svg",
@@ -57,11 +57,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             },
             {
               type: "doc",
-              docId: "tech_docs/tech",
+              docId: "developer_guide/hello_yuzu",
               position: "left",
-              label: "Tech doc",
+              label: "Developer Guide",
             },
-            { to: "/", label: "Release notes", position: "left" },
+            // { to: "/", label: "Release notes", position: "left" },
           ],
         },
         footer: {
