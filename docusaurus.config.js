@@ -7,7 +7,7 @@ import { themes as prismThemes } from "prism-react-renderer";
     title: "Yuzu documentation",
     tagline: "",
     url: "https://citrus-software.github.io",
-    baseUrl: "/",
+    baseUrl: "/yuzu-docs/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
