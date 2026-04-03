@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # Introduction
 
-**Welcome to the Yuzu Developer Guide!** 
+**Welcome to the Yuzu Developer Guide!**
 
 This part of the Yuzu documentation is intended to **Python developers**.
 With its Python scripting API, named `opac`, you will be able to develop custom automations, connect to your Pipeline, tools or storage Server using scripts.
@@ -39,16 +39,16 @@ First you need an account to connect to Yuzu then you can use the helper `opac.h
     config.json :
     ```json
     {
-        "USERNAME": "<login>", 
+        "USERNAME": "<login>",
         "PASSWORD": "<password>"
     }
     ```
-    
+
     main.py :
     ```python
     import json
     from opac.helpers import connect, autoConnect
-    
+
     try:
         settings = {
             "API_HOST": "<your_yuzu_url>/api",
@@ -233,7 +233,7 @@ asset.delete()
 ```
 
 :::important
-To create, update or delete multiple objects at once, see [management](/developer_guide/management).
+To create, update or delete multiple objects at once, see [bulk](/developer_guide/advanced_usage/bulk).
 :::
 
 
