@@ -7,28 +7,28 @@ slug: /
 
 # Yuzu Documentation
 
-> **Bienvenu dans Yuzu, et merci pour votre confiance!** 
-> 
+> **Bienvenu dans Yuzu, et merci pour votre confiance!**
+>
 > Nous souhaitons à chacun de trouver ses habitudes, ses préférences dans sa manière de travailler avec Yuzu. Vous verrez, avec un peu de temps, vous trouverez facilement tout ce que vous cherchez!
 > Nous savons qu'une production comporte beaucoup d'aspects, lié à l'artistique, aux techniques et logistiques. Nous avons développpé cet asset tracker en collaboration avec les nombreux profils de la production d'animation, pour cibler au mieux leur besoins et les solutions qui faisaient sens pour eux.
-> 
+>
 > Yuzu ne contient pas toutes les manières de faire, mais certaines de ces méthodologies qui ont prouvé leur efficacité et leurs confort au quotidien pour l'ensemble des équipes.
 > Nous esperons que vous l'aimerez aussi !
 >
 >
-> **Yuzu est aussi votre logiciel**,  
-> parce que nous prenons les bonnes idées de partout où elles viennent — et pas seulement d'une première experience studio — n'hesitez pas à nous faire des retours et à partagez vos suggestions. Que vous ayez une question, un besoin de support, ou juste envie de parler production manager, venez sur notre server Discord et dites bonjour ! 
+> **Yuzu est aussi votre logiciel**,
+> parce que nous prenons les bonnes idées de partout où elles viennent — et pas seulement d'une première experience studio — n'hesitez pas à nous faire des retours et à partagez vos suggestions. Que vous ayez une question, un besoin de support, ou juste envie de parler production manager, venez sur notre server Discord et dites bonjour !
 >
 > **Animation is the passion that brings us together!**
 >
 > *Yuzu team*
 
-## Nos chères et cruciales information
+## Nos chères et cruciales "informations"
 
 Avant de vous présenter notre logiciel de suivi de production, parlons un peu du coeur du problèms : les informations.
 Le nombre d'informations qui circulent est énorme, plusieurs milliers par jour.
-Leur temps de validité est changeant, une information peut devenir obsolète au bout de quelques minutes pour laisser place à une nouvelle information.  
-La pertinence de l'interpretation de ces informations dépends de la personne qui la recoit, et de a manière dont elle la recoit, est-ce qu'elle : 
+Leur temps de validité est changeant, une information peut devenir obsolète au bout de quelques minutes pour laisser place à une nouvelle information.
+La pertinence de l'interpretation de ces informations dépends de la personne qui la recoit, et de a manière dont elle la recoit, est-ce qu'elle :
 * apparaît parmis d'autres informations ?
 * paraît critique ?
 * est lisible en un coup d'oeil ?
@@ -55,9 +55,9 @@ Yuzu vous permettra de suivre tout type de projet média que ce soit une série,
     - **Explorer et Rechercher** : Utilisez de puissantes recherches par projet ou global au studio pour découvrir, chercher, et trouver !
     - **Documenter** : Créez des wikis pour vos assets, vos déparements, vos processus de travail.
 
-:::warning 
+:::warning
 
-Yuzu n'est pas concu pour stocker les medias finaux. Il est à utiliser en complément d'un serveur permettant de stocker vos fichiers de production (sequences d'images, fichier de logiciel métier, textures, sons, etc ).  
+Yuzu n'est pas concu pour stocker les medias finaux. Il est à utiliser en complément d'un serveur permettant de stocker vos fichiers de production (sequences d'images, fichier de logiciel métier, textures, sons, etc ).
 
 Concernant les reviews, il n'intègre pas aujourd'hui de player d'image web. Il est par contre livré avec un player d'image desktop et une intégration Yuzu dans ce player : **Pomelo** ! N'hesitez pas à aller le découvrir aussi (lien).
 
