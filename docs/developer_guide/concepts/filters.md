@@ -12,24 +12,6 @@ To filter and have multiple objects, you can use `OvermindObject.objects.filter`
 To have access to all filters you want, you need to specify a project before filtering.
 :::
 
-
-## Assets
-
-Assets include the following elements (italic means that the element is not useful yet or not needed in most filters):
-
-- `Computer`: `pc`
-- `Location`: `lc`
-- Group: `gp`
-- User: `us`
-- Project: `pj`
-- Folder: `fo`
-- Model: `mo`
-- Episode: `ep`
-- Sequence: `sq`
-- Shot: `sh`
-- Office: `of`
-- Place holder: `ph`
-
 ## Example
 
 ```python

@@ -1,12 +1,16 @@
 ---
 sidebar_position: 1
+slug: developer_guide
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Hello Yuzu
+# Introduction
 
-**Welcome to the Yuzu Developer Guide!** This part of the Yuzu documentation is intended to **Python developers**.
+**Welcome to the Yuzu Developer Guide!** 
+
+This part of the Yuzu documentation is intended to **Python developers**.
 With its Python scripting API, named `opac`, you will be able to develop custom automations, connect to your Pipeline, tools or storage Server using scripts.
 
 `opac` (Yuzu-Yuzu Python Api Client) is part of the Yuzu_ asset manager project.
@@ -32,26 +36,39 @@ First you need an account to connect to Yuzu then you can use the helper `opac.h
 
 <Tabs>
   <TabItem value="Authentication connect" label="Authentication connect" default>
-    ```python
-    from opac.helpers import connect, autoConnect
-
-    config = {
-        "API_HOST": "<your_yuzu_url>/api",
-        "API_HTTPS": True,
+    config.json :
+    ```json
+    {
+        "USERNAME": "<login>", 
+        "PASSWORD": "<password>"
     }
+    ```
+    
+    main.py :
+    ```python
+    import json
+    from opac.helpers import connect, autoConnect
+    
+    try:
+        settings = {
+            "API_HOST": "<your_yuzu_url>/api",
+        }
 
-    if connect("<login>", "<password>", settings):
-        print("Connection established.")
+        with open("config.json", "r") as fd:
+            config = json.load(fd)
 
+        if connect(config["USERNAME"], config["PASSWORD"], settings):
+            print("Connection established.")
+    except json.JSONDecodeError as e:
+        print("Could not load configuration file :", e)
     ```
   </TabItem>
   <TabItem value="Token loaded by Third party software" label="Token loaded by Third party software">
     ```python
     from opac.helpers import connect, autoConnect
 
-    config = {
+    settings = {
         "API_HOST": "<your_yuzu_url>/api",
-        "API_HTTPS": True,
     }
 
     # if you are logged in Sentry that deals with token connection
@@ -60,6 +77,10 @@ First you need an account to connect to Yuzu then you can use the helper `opac.h
         ```
   </TabItem>
 </Tabs>
+
+:::caution
+Never commit some code with your password. Always prefer using a local configuration file excluded from your commits.
+:::
 
 ### 2. Select a project
 
@@ -99,11 +120,6 @@ for ep in episodes:
 ```
 
 In addition to those attributes, each model will implement a bunch of properties corresponding to the related endpoint on the server.
-
-:::tip
-To update multiple objects at once, see management.
-:::
-
 
 Example:
 
@@ -216,8 +232,8 @@ asset.delete()
 # now the asset is deleted from Yuzu
 ```
 
-:::tip
-To create, update or delete multiple objects at once, see management.
+:::important
+To create, update or delete multiple objects at once, see [management](/developer_guide/management).
 :::
 
 
@@ -226,8 +242,12 @@ To create, update or delete multiple objects at once, see management.
 You can override the default request timeout (10 seconds) using an environment variable.
 
 ```python
+### This need to be done BEFORE ANY import from opac
 import os
 os.environ["REQUESTS_DEFAULT_TIMEOUT"] = "30"
+
+### Then you can use opac normally
+import opac
 ```
 
 Max timeout on server side is 60 seconds.

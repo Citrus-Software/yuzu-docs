@@ -7,7 +7,7 @@ import { themes as prismThemes } from "prism-react-renderer";
     title: "Yuzu documentation",
     tagline: "",
     url: "https://citrus-software.github.io",
-    baseUrl: "/yuzu-docs/",
+    baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
@@ -52,12 +52,11 @@ import { themes as prismThemes } from "prism-react-renderer";
               label: "User manual",
             },
             {
-              type: "doc",
-              docId: "developer_guide/hello_yuzu",
+              type: "docSidebar",
+              sidebarId: "developerGuide",
               position: "left",
               label: "Developer Guide",
             },
-            // { to: "/release-notes", label: "Release notes", position: "left" },
           ],
         },
         footer: {
