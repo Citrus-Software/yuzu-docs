@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Advanced management
+# Bulk
 
 You can bulk-manage from `opac` with `opac.core.OvermindObject.bulkSave()` and `opac.core.OvermindObject.bulkDelete()`
 
