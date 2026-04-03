@@ -14,14 +14,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Build website
         uses: actions/setup-node@v3
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build website
-        run: npm run build
+      - run: yarn install
+      - run: yarn build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
